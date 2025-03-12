@@ -51,3 +51,18 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .center-text h1 {
+        font-size: 1.4em;
+    }
+
+    .right-text a {
+        font-size: 1em;
+    }
+
+    
+}
