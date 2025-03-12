@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar 2025</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+    <header>
+        <img src="https://ugb.edu.sv/wp-content/uploads/2024/10/UGB_LOGO_AZUL.png" alt="Logo UGB">
+        <nav>
+            <div class="center-text">
+                <h1>Oscar 2025</h1>
+            </div>
+            <div class="right-text">
+                <p>Samuel Elias Flores Amaya SMSS076223</p>
+                <p>Jonathan Estiven Campos Rodriguez SMSS097623</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Premios Oscar 2025: la lista completa de ganadores</h2>
+            <p>Los Oscar se llevaron a cabo este 2 de marzo del año 2025.</p>
+
+            <div class="Ganadores">
+                <oscar-winner 
+                    title="Mejor Película" 
+                    description="Anora fue la ganadora a la mejor película del año." 
+                    img="https://upload.wikimedia.org/wikipedia/en/2/2b/Anora_%282024_film%29_poster.jpg">
+                </oscar-winner>
+
+                <oscar-winner 
+                    title="Mejor Actor en un Papel Principal" 
+                    description="Adrien Brody, en 'The Brutalist' fue el ganador de esta categoría." 
+                    img="https://assets.dev-filo.dift.io/img/2025/01/16/bro9461_sq.jpg">
+                </oscar-winner>
+
+                <oscar-winner 
+                    title="Mejor Actriz en un Papel Principal" 
+                    description="Mikey Madison, fue la ganadora por su papel en 'Anora'." 
+                    img="https://www.instyle.com/thmb/LhFHwOo4hSuo_w3BQSXrO54x03g=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-2202958346-a9744395a7cf48deaad16fb080358585.jpg">
+                </oscar-winner>
+            </div>
+        </section>
+
+        <section id="Ganadores">
+            <div class="Ganadores">
+                <oscar-winner 
+                    title="Mejor Actor de Reparto" 
+                    description="Kieran Culkin se llevó esta categoría por su actuación en 'A Real Pain'." 
+                    img="https://eltestigo.do/wp-content/uploads/2025/02/kieran-culkin-gana-bafta-a-mejor-actor-de-reparto-por-a-real-pain-3.jpg">
+                </oscar-winner>
+
+                <oscar-winner 
+                    title="Mejor Actriz de Reparto" 
+                    description="Zoe Saldaña se llevó esta categoría por su actuación en 'Emilia Pérez'." 
+                    img="https://static01.nyt.com/images/2025/03/03/espanol/03oscars-emilia1-zfjt-ES-copy1/03oscars-emilia1-zfjt-jumbo.jpg?quality=75&auto=webp">
+                </oscar-winner>
+
+                <oscar-winner 
+                    title="Mejor Director" 
+                    description="Sean Baker se lleva esta categoría por su desempeño en la película 'Anora'." 
+                    img="https://variety.com/wp-content/uploads/2025/03/Sean-Baker.jpg?w=1000&h=667&crop=1&resize=681%2C454">
+                </oscar-winner>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Oscar 2025 | Todos los derechos reservados</p>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Imagen ampliada">
+    </div>
+
+    <script src="oscar.js"></script>
+</body>
+</html>

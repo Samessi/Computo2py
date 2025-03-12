@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Turismo en El Salvador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://ugb.edu.sv/wp-content/uploads/2024/10/UGB_LOGO_AZUL.png" alt="Logo de Turismo en El Salvador">
+        <nav>
+            <div class="center-text">
+                <h1>Turismo en El Salvador</h1>
+            </div>
+            <div class="right-text">
+                <a href="#gallery">Galería</a>
+                <a href="#audio">Música</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Destinos Turísticos</h2>
+            <p>El Salvador tiene una gran variedad de destinos turísticos, desde playas paradisíacas hasta montañas llenas de historia y cultura. ¡Descúbrelos!</p>
+            <div class="destinos">
+                <div class="destino">
+                    <h3>Alegria</h3>
+                    <p>Alegría, en Usulután, es un pintoresco pueblo en El Salvador conocido por su clima fresco y la Laguna de Alegría. Ofrece vistas espectaculares, cafetales y una feria gastronómica los fines de semana.
+                    </p>
+                </div>
+                <div class="destino">
+                    <h3>Surf City</h3>
+                    <p>Surf City, en El Salvador, es un destino ideal para surfistas, con playas como El Tunco y El Sunzal, y una excelente infraestructura turística.</p>
+                </div>
+                <div class="destino">
+                    <h3>El Boqueron</h3>
+                    <p>El Boquerón, en El Salvador, es un parque nacional ubicado en la cima del volcán de San Salvador. Ofrece impresionantes vistas del cráter volcánico y senderos para caminatas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery">
+                <img src="https://i.ytimg.com/vi/CeF6tODADOI/maxresdefault.jpg" alt="Alegria -Usulutan-" onclick="ampliarImagen(this)">
+                <img src="https://diarioelsalvador.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-05-at-2.06.04-PM-2.jpeg" alt="Surft City" onclick="ampliarImagen(this)">
+                <img src="https://diarioelsalvador.com/wp-content/uploads/2021/07/sjhht.jpg" alt="El Boqueron" onclick="ampliarImagen(this)">
+            </div>
+        </section>
+
+        <section id="audio">
+            <h2>Reproductor de Música</h2>
+            <audio id="audioPlayer" controls>
+                <source src="musica\Los Hermanos Flores - Salvadoreñas (Audio HQ).mp3" type="audio/mp3">
+                <source src="musica2.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <p>Disfruta de la música tradicional de El Salvador mientras conoces más sobre el país.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Turismo en El Salvador | Todos los derechos reservados</p>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Imagen ampliada">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
