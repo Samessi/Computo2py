@@ -124,6 +124,12 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+.modal img {
+    max-width: 80%;  /* Ajusta la imagen al 80% del ancho disponible */
+    max-height: 400px; /* No será más alta de 400px */
+    border-radius: 10px;
+}
+
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
