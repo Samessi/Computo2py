@@ -3,27 +3,26 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    
-   
 }
+
+/* Estilos para el header */
 header {
     background-color: #333;
     color: white;
     padding: 20px;
     font-size: 24px;
 }
-.productos {
+
+/* Contenedor de productos */
+.productos, .productos2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
+    gap: 10px; /* Agrega un espacio uniforme entre los elementos */
 }
-.productos2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
-}
+
+/* Estilos individuales de los productos */
 .producto {
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -32,10 +31,16 @@ header {
     width: 200px;
     text-align: center;
 }
+
+/* Asegura que las imágenes sean responsivas */
 .producto img {
     width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
 }
+
+/* Botón de comprar */
 .boton-comprar {
     background-color: #28a745;
     color: white;
@@ -44,6 +49,8 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Footer */
 footer {
     background-color: black;
     color: white;
@@ -51,18 +58,38 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
-@media (max-width: 600px) {
-    .gallery {
-        grid-template-columns: 1fr;
+
+/* ==== RESPONSIVE DESIGN ==== */
+@media (max-width: 768px) {
+    /* Cambia la dirección del flexbox a columna en móviles */
+    .productos, .productos2 {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .center-text h1 {
-        font-size: 1.4em;
+    /* Ajusta el ancho de los productos en móviles */
+    .producto {
+        width: 90%;
+        max-width: 300px;
     }
 
-    .right-text a {
-        font-size: 1em;
+    /* Reduce el tamaño del header en pantallas pequeñas */
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce más el tamaño del header */
+    header {
+        font-size: 18px;
+        padding: 10px;
     }
 
-    
+    /* Ajusta el footer */
+    footer {
+        padding: 5px;
+        font-size: 14px;
+    }
 }
